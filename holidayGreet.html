@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Holiday Greetings</title>
+    <meta name="description" content="Holiday">
+    <meta name="keywords" content="greeting card">
+    <script src="https://kit.fontawesome.com/185af3cd60.js" crossorigin="anonymous"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+  }
+  
+  .gradient {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom left, green, white);
+    padding: 25px;
+  }
+  
+  #left {
+    order: 1;
+    flex-grow: 1;
+  }
+  
+  #right {
+    order: 2;
+    flex-grow: 2;
+    height: 25%;
+    width: 60%;
+    align-self: flex-end;
+    margin-right: 60px;
+    padding: 35px;
+  }
+  
+  p {
+    color: black;
+    text-align: right;
+    vertical-align: text-bottom;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 34px;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  @media only screen and (max-width: 600px) {
+   
+    p {
+      font-size: 24px;
+    }
+  }
+</style>
+
+<body>
+
+    <div class="gradient">
+        <div id="left">
+            <ul>
+                <li id="beam"><span class="fas fa-holly-berry fa-5x"></span></li>
+                <li><br></li>
+                <li id="heart"><span class="fas fa-sleigh fa-5x fa-spin"></span></li>
+                <li><br></li>
+                <li id="wink"><span class="fas fa-candy-cane fa-5x"></span></li>
+            </ul>
+        </div>
+
+        <div id="right">
+            <p>Happy Holidays To You</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
